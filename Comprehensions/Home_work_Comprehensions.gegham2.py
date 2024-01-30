@@ -1,0 +1,16 @@
+# Given a string, create a dictionary where keys are characters and values are their
+# frequencies in the string.
+
+test_str = "GeeksforGeeks"
+ 
+
+all_freq = {}
+ 
+for i in test_str:
+    if i in all_freq:
+        all_freq[i] += 1
+    else:
+        all_freq[i] = 1
+ 
+print("Count of all characters in GeeksforGeeks is :\n "
+      + str(all_freq))
